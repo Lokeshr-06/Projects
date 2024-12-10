@@ -1,5 +1,5 @@
 # Projects
-<h5>Hey There 👋, Welcome To My Profile, Here Are The Information About My Projects.</h5>
+<h5>Hey There 👋, Welcome To My Profile, Here is The Information About My Projects.</h5>
 <h3>I Devloped Python Based Projects </h3>
 <ul>
 <h5>1. Contact Book – Python App for Managing Contacts</h5>
