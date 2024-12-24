@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Daily Expenses Tracker</h1>
+        <p>Please wait while the application loads...</p>
+        <div id="expenseApp" style="display:none;">
+            <div class="input-section">
+                <h2>Add Expense</h2>
+                <input type="text" id="description" placeholder="Enter Description">
+                <input type="number" id="amount" placeholder="Enter Amount" min="0" step="any">
+                <input type="text" id="category" placeholder="Enter Category">
+                <button onclick="addExpense()">Add Expense</button>
+            </div>
+
+            <div class="output-section">
+                <h2>Expense Tracker</h2>
+                <button onclick="viewExpenses()">View Expenses</button>
+                <button onclick="viewCategorySummary()">Category Summary</button>
+                <button onclick="viewTotalExpenses()">Total Expenses</button>
+                <button onclick="clearAllExpenses()">Clear All Expenses</button>
+                <div id="expenseList"></div>
+                <div id="categorySummary"></div>
+                <div id="totalExpenses"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

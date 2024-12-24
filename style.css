@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1446de, #e6f7ff); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    transition: transform 0.5s ease;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2eb0d8;
+    font-size: 2.5em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #a91515;
+}
+
+.input-section {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: #400f71;
+}
+.input-section h2{
+    font-weight: bold;
+    color:rgba(22, 216, 119, 0.788) ;
+}
+
+input {
+    padding: 12px;
+    margin: 10px 0;
+    width: calc(100% - 24px);
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    background-color: #f8f8f8;
+}
+
+input:focus {
+    border-color: #400f71;
+    outline: none;
+    background-color: #fff;
+}
+
+input:hover {
+    background-color: #e6f7ff;
+}
+
+button {
+    padding: 14px 25px;
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #24aaa6, #6a1b9a);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.output-section {
+    background-color: #f9f9f9;
+    padding: 25px;
+    color: #400f71;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.output-section h2{
+    font-weight: bold;
+    color:rgba(22, 216, 119, 0.788) ;
+}
+
+#expenseList, #categorySummary, #totalExpenses {
+    margin-top: 20px;
+}
+
+#expenseList div, #categorySummary div, #totalExpenses div {
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 8px 0;
+    transition: background-color 0.3s ease;
+}
+
+#expenseList div:hover, #categorySummary div:hover, #totalExpenses div:hover {
+    background-color: #eaf7e4;
+}
+
+#expenseApp {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    input {
+        width: calc(100% - 16px);
+    }
+
+    button {
+        width: 100%;
+    }
+}
